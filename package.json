@@ -1,0 +1,28 @@
+{
+  "name": "apisendgridmail",
+  "version": "1.0.0",
+  "description": "API Mail de SendGrid",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jers3084/APImail.git"
+  },
+  "author": "Jesus Eugenio Ricardez de los Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jers3084/APImail/issues"
+  },
+  "homepage": "https://github.com/Jers3084/APImail#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^7.6.2",
+    "body-parser": "^1.19.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}
