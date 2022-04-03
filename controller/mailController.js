@@ -15,7 +15,6 @@ const sendmail = async (req, res) => {
       text: mensaje.comentario, // mensaje
       html: mensaje.comentario,
     }
-    console.log(msg)
     await sgMail.send(msg).then(() => {
       const result = 'Email sent' // response.body
       response.data = result
