@@ -15,11 +15,11 @@ const sendmail = async (req, res) => {
       text: mensaje.comentario, // mensaje
       html: mensaje.comentario,
     }
-    console.log(msg);
+    console.log(msg)
     await sgMail.send(msg).then(() => {
       const result = 'Email sent' // response.body
       response.data = result
-      response.messages = 'Ok'
+      response.message = 'Ok'
       return res.json(response)
     })
   } catch (error) {

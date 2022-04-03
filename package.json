@@ -4,8 +4,8 @@
   "description": "API Mail de SendGrid",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "start:dev": "nodemon index.js"
+    "start": "node App.js",
+    "start:dev": "nodemon App.js"
   },
   "repository": {
     "type": "git",
