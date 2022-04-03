@@ -9,13 +9,13 @@ const sendmail = async (req, res) => {
   const mensaje = req.body
   try {
     const msg = {
-      to: 'jers1968@gmail.com', // Destino
+      to: process.env.TO_EMAIL, // Destino
       from: mensaje.email, // correo del interesado
       subject: 'Mensaje de Portafolio',
       text: mensaje.comentario, // mensaje
       html: mensaje.comentario,
     }
-
+    console.log(msg);
     await sgMail.send(msg).then(() => {
       const result = 'Email sent' // response.body
       response.data = result
